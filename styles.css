@@ -4,6 +4,8 @@
     --eye-color: #76D7C4;
     --iris-color: #1ABC9C;
     --pupil-color: #ffffff;
+    --only-black: rgb(0, 0, 0);
+    --tonge-color: #f02720;
 }
 
 body{
@@ -148,6 +150,7 @@ div.ear22{
      border-radius: 50%;
      background: var(--main-color);
      position: relative;
+     z-index: 50;
     
 }
 
@@ -157,13 +160,27 @@ div.ear22{
     top: 80px;
 }
 
+.eye1{
+    position: absolute;
+    background: var(--pupil-color);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    left: 40px;
+    border: 1px solid var(--only-black);
+
+}
+
+
 .lefteye{
     width: 80px;
     height: 80px;
     background: #76D7C4;
     border-radius: 50%;
     position: absolute;
-    left: 40px;
+    left: 10px;
+    top: 5px;
+    border: 1px solid var(--only-black);
 }
 
 .lefteye .iris{
@@ -183,6 +200,19 @@ div.ear22{
     top: 6px;
     border-radius: 50%;
     background: var(--pupil-color);
+    border: 1px solid var(--only-black);
+}
+
+
+.eye2{
+    position: absolute;
+    background: var(--pupil-color);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    right: 40px;
+    border: 1px solid var(--only-black)
+
 }
 
 .righteye{
@@ -191,7 +221,9 @@ div.ear22{
     background: #76D7C4;
     border-radius: 50%;
     position: absolute;
-    right: 40px;
+    right: 10px;
+    top: 5px;
+    border: 1px solid var(--only-black);
 }
 
 .righteye .iris{
@@ -211,5 +243,53 @@ div.ear22{
     top: 6px;
     border-radius: 50%;
     background: var(--pupil-color);
+    border: 1px solid var(--only-black);
 }
 
+
+
+.mouth{
+    width: 70px; 
+    height: 70px; 
+    border: 2px solid #555; 
+    background: var(--only-black);
+    -moz-border-radius: 100px 100px 0 0;
+    -webkit-border-radius: 100px 100px 0 0;
+    border-radius: 200px 200px 0 0;
+    position: relative;
+    left: 110px;
+    right: 0;
+    top: 190px;
+    transform: rotate(180deg);
+    
+    
+}
+
+.tongue{
+    width: 50px; 
+    height: 52px;  
+    background: var(--tonge-color);
+    -moz-border-radius: 0 100% 0 0;
+    -webkit-border-radius: 0 100% 0 0;
+    border-radius: 0 100% 0 0;
+    position: relative;
+    top: 12px;
+    left: 10px;
+    transform: rotate(150deg);
+    z-index: 30;
+}
+
+.tongue2{
+    width: 72px; 
+    height: 40px; 
+    background: var(--tonge-color);
+    -moz-border-radius: 100px 100px 0 0;
+    -webkit-border-radius: 100px 100px 0 0;
+    border-radius: 200px 200px 0 0;
+    position: absolute;
+    left: 4px;
+    right: ;
+    top: 0px;
+    transform: rotate(16.5deg);
+    
+}
